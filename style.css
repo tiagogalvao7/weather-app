@@ -1,0 +1,118 @@
+/* Reset and global styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+}
+
+/* Main application container */
+.app-container {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* Creates space between main sections (header, search, display) */
+}
+
+/* Header styling */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#317a33
+}
+
+/* Weather Search Section */
+.weather-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#get-weather-button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+#get-weather-button:hover {
+    background: #1e40af;
+}
+
+#city-input {
+    padding: 15px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Weather Display Section */
+.weather-display {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Fade-in effect for a smoother transition */
+}
+
+.weather-display.visible {
+    opacity: 1;
+}
+
+/* Styling for the new weather info card */
+.weather-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* Separates city, date, and weather details */
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* Separates the icon from the temperature */
+}
+
+#city-name {
+    font-size: 2.5em;
+    /* Larger font for the city name */
+    text-align: center;
+    font-weight: bold;
+}
+
+#current-date {
+    color: #c70b0b;
+    /* Softer color for secondary info */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#city-temp {
+    font-size: 4em;
+    /* Emphasizes the temperature */
+    text-align: center;
+    font-weight: bold;
+}

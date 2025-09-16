@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"
+        type="application/javascript"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Weather Application</h1>
+        </header>
+
+        <section class="weather-search">
+            <label for="city-input">Get city weather</label>
+            <div class="search-bar">
+                <input type="string" id="city-input" placeholder="City name" />
+                <button id="get-weather-button">🔍 Get weather</button>
+            </div>
+        </section>
+
+        <section class="weather-display">
+            <div class="weather-info-card">
+                <div id="city-name"></div>
+                <div id="current-date"></div>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="Weather icon" />
+                    <div id="city-temp"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
